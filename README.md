@@ -2,6 +2,7 @@ Patches for webtrees docker https://hub.docker.com/r/nathanvaughn/webtrees
 
 ## Patches description
 webtrees-docker/app_patches/patch-last-name-first.sh - changes the display format of the full name: put last name first
+webtrees-docker/app_patches/patch-translations.sh - fix errors in translations
 
 ## How to apply all patches automatically with docker start
 ```bash
@@ -25,7 +26,7 @@ docker-compose up -d
 ```
 
 ## Structure
-webtrees-docker/app_patches - place patches here. Patch file name should start with patch- 
+webtrees-docker/app_patches/ - place patches here. Patch file name should start with patch- 
 They are automatically executed by startup.sh script when the container starts to fix the project code.
 
 ## Patch testing / Manual apply patch
