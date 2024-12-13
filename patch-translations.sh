@@ -14,5 +14,6 @@ EOF
 
 file="/var/www/webtrees/resources/lang/ru/messages.php"  # The file to edit in place
 
-./replace.sh "$from_line" "$to_line" "$file"
+script_dir=$(dirname "$(realpath "$0")")
+"$script_dir/replace.sh" "$from_line" "$to_line" "$file"
 

@@ -23,8 +23,8 @@ nano docker-compose.yml
 start container
 ```bash
 docker-compose up -d
-# Apply patches to container
-docker exec -it webtrees-docker_app_1 /patches/patch-translations.sh
+# Apply all patches to container
+docker exec -it webtrees-docker_app_1 /patches/startup.sh
 ```
 
 ## Structure

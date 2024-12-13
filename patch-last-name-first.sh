@@ -22,5 +22,7 @@ EOF
 
 file="/var/www/webtrees/app/Individual.php"  # The file to edit in place
 
-./replace.sh "$from_line" "$to_line" "$file"
+# Get the directory where this script is located
+script_dir=$(dirname "$(realpath "$0")")
+"$script_dir/replace.sh" "$from_line" "$to_line" "$file"
 
